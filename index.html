@@ -111,6 +111,8 @@
         fetch(url).then(res => res.json()).then(data => {
             let temp = (data['temp']);
 
+            console.log(temp);
+
             if (temp >= 20)
                 $('#temp').text("더워요");
             else
